@@ -1,0 +1,18 @@
+.card_wrapper {
+  border: 1px solid;
+  margin: 2rem;
+}
+
+.card_orders {
+  border: 1px solid;
+}
+
+.card_order_item {
+  border: 1px solid;
+  list-style-type: none;
+}
+
+.card_order_item_inner {
+  list-style-type: none;
+  display: flex;
+}
