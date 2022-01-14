@@ -2,7 +2,6 @@ import React from "react";
 import "./UserCard.css";
 
 export default function UserCard(user) {
-  console.log(user);
   const { lastName, firstName, orders } = user.cardData;
 
   return (
