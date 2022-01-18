@@ -21,14 +21,14 @@ const userData = [
     lastName: "Mueller",
     orders: [
       {
-        numOfOrder: 1,
+        numOfOrder: 2,
         orderedProducts: [
           { productName: "Maus", price: 49.99 },
           { productName: "Tastatur", price: 120.0 },
         ],
       },
       {
-        numOfOrder: 2,
+        numOfOrder: 1,
         orderedProducts: [
           { productName: "Mikrofasertuch", price: 7.49 },
           { productName: "Teppich", price: 300.0 },
@@ -61,9 +61,8 @@ const userData = [
 
 export default function Customerinfo() {
   // User werden alphabetisch sortiert
-  userData.sort(function (a, b) {
-    return a.lastName.localeCompare(b.lastName);
-  });
+  userData.sort((a, b) => a.lastName.localeCompare(b.lastName));
+
   return (
     <div>
       <h1>info</h1>
